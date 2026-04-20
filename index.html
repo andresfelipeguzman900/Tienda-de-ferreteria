@@ -1,111 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tienda de Herramientas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
+<meta charset="UTF-8">
+<title>Super Herramientas</title>
 
-        header {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5eb;
+}
 
-        .contenedor {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
+/* ENCABEZADO */
+header {
+    background: linear-gradient(90deg, #ff6600, #ff3300);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
-        .producto {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            padding: 15px;
-            text-align: center;
-        }
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
 
-        .producto img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+header p {
+    font-size: 18px;
+}
 
-        .precio {
-            color: green;
-            font-weight: bold;
-            font-size: 18px;
-        }
+/* PRODUCTOS */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
 
-        button {
-            background-color: #ff6600;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.producto {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
 
-        button:hover {
-            background-color: #cc5200;
-        }
-    </style>
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+}
+
+.precio {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #cc5200;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
-    <h1>🔧 Mi Tienda de Herramientas</h1>
-    <p>Herramientas para motos, carros y construcción</p>
+    <h1>🔧 Super Herramientas</h1>
+    <p>Todo para tu moto, carro y construcción</p>
 </header>
 
 <div class="contenedor">
 
     <div class="producto">
-        <img src="https://images.unsplash.com/photo-1581091870627-3c5a3b5b1c1c" alt="Kit herramientas moto">
-        <h3>Kit de Herramientas para Moto</h3>
+        <img src="https://images.unsplash.com/photo-1602526217033-2a3c2a9b5e2f?auto=format&fit=crop&w=500&q=60">
+        <h3>Kit Profesional para Moto</h3>
         <p class="precio">$120.000</p>
         <button>Comprar</button>
     </div>
 
     <div class="producto">
-        <img src="https://images.unsplash.com/photo-1602526217033-2a3c2a9b5e2f" alt="Herramientas carro">
-        <h3>Kit de Herramientas para Carro</h3>
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=500&q=60">
+        <h3>Kit Completo para Carro</h3>
         <p class="precio">$180.000</p>
         <button>Comprar</button>
     </div>
 
     <div class="producto">
-        <img src="https://images.unsplash.com/photo-1581579185169-7a1a4b2c1c5f" alt="Taladro">
-        <h3>Taladro Eléctrico</h3>
+        <img src="https://images.unsplash.com/photo-1581579185169-7a1a4b2c1c5f?auto=format&fit=crop&w=500&q=60">
+        <h3>Taladro Eléctrico Industrial</h3>
         <p class="precio">$250.000</p>
         <button>Comprar</button>
     </div>
 
     <div class="producto">
-        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" alt="Caja herramientas">
-        <h3>Caja de Herramientas Completa</h3>
+        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62?auto=format&fit=crop&w=500&q=60">
+        <h3>Caja de Herramientas Premium</h3>
         <p class="precio">$300.000</p>
         <button>Comprar</button>
     </div>
 
     <div class="producto">
-        <img src="https://images.unsplash.com/photo-1565120130286-5a0c39a2c9d1" alt="Llaves">
-        <h3>Juego de Llaves</h3>
+        <img src="https://images.unsplash.com/photo-1565120130286-5a0c39a2c9d1?auto=format&fit=crop&w=500&q=60">
+        <h3>Juego de Llaves Profesionales</h3>
         <p class="precio">$90.000</p>
         <button>Comprar</button>
     </div>
 
     <div class="producto">
-        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Martillo">
-        <h3>Martillo Profesional</h3>
+        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=500&q=60">
+        <h3>Martillo de Construcción</h3>
         <p class="precio">$45.000</p>
         <button>Comprar</button>
     </div>
